@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    scanf("%d", &t);
+    while (t--)
+    {
+        int s1, s2, s3, s4;
+        scanf("%d %d %d %d", &s1, &s2, &s3, &s4);
+        int max1 = max(s1, s2);
+        int min1 = min(s1, s2);
+        int max2 = max(s3, s4);
+        int min2 = min(s3, s4);
+        if (min1 > max2 || min2 > max1)
+        {
+            printf("No\n");
+        }
+        else
+            printf("Yes\n");
+    }
+
+    return 0;
+}
